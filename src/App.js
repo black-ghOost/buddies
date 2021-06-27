@@ -3,7 +3,9 @@
 import { createContext, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import AddPost from './components/addPost/AddPost';
 import Home from './components/home/Home';
+import Post from './components/post/Post';
 import Profile from './components/profile/Profile';
 import Footer from './components/shared/footer/Footer';
 import Navbar from './components/shared/navbar/Navbar';
@@ -33,16 +35,17 @@ export default function App() {
 
                         {/* <Route exact path="/user">
                             <User />
-                        </Route>
-                        <Route exact path="/addNewPost">
-                            <AddNewPost />
-                        </Route>
-                        <Route exact path="/updatePost">
-                            <UpdatePost />
+                        </Route> */}
+                        <Route exact path="/addPost">
+                            <AddPost />
                         </Route>
                         <Route path="/post/:postId">
-                            <PostDetails />
-                        </Route> */}
+                            <Post />
+                        </Route>
+                        {/* <Route exact path="/updatePost">
+                            <UpdatePost />
+                        </Route>
+                         */}
                         <Route path="*">
                             <h2> Opps! page not found</h2>
                         </Route>

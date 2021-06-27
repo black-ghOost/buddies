@@ -28,9 +28,9 @@ export default function Profile() {
         });
     };
 
-    const handleAddNewPost = () => {
+    const handleAddPost = () => {
         history.push({
-            pathname: '/addNewPost',
+            pathname: '/addPost',
             state: currentUser,
         });
     };
@@ -66,10 +66,10 @@ export default function Profile() {
 
                     <button
                         type="button"
-                        onClick={() => handleAddNewPost()}
+                        onClick={() => handleAddPost()}
                         className="btn btn-primary"
                     >
-                        Add New Post
+                        Add Post
                     </button>
                 </div>
                 {currentUserPost.map((post) => (
