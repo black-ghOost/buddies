@@ -9,6 +9,7 @@ import Post from './components/post/Post';
 import Profile from './components/profile/Profile';
 import Footer from './components/shared/footer/Footer';
 import Navbar from './components/shared/navbar/Navbar';
+import Update from './components/updatePost/Update';
 
 export const articleContext = createContext();
 export const localStorageContext = createContext();
@@ -32,20 +33,32 @@ export default function App() {
                         <Route path="/profile">
                             <Profile />
                         </Route>
+                        {/* <Route exact path="/user">
+                            <User />
+                        </Route>
+                        <Route exact path="/addNewPost">
+                            <AddNewPost />
+                        </Route>
+                        <Route exact path="/updatePost">
+                            <UpdatePost />
+                        </Route>
+                        <Route path="/post/:postId">
+                            <PostDetails />
+                        </Route> */}
 
                         {/* <Route exact path="/user">
                             <User />
                         </Route> */}
-                        <Route exact path="/addPost">
+                        <Route path="/addPost">
                             <AddPost />
                         </Route>
                         <Route path="/post/:postId">
                             <Post />
                         </Route>
-                        {/* <Route exact path="/updatePost">
-                            <UpdatePost />
+                        <Route path="/updatePost">
+                            <Update />
                         </Route>
-                         */}
+
                         <Route path="*">
                             <h2> Opps! page not found</h2>
                         </Route>
