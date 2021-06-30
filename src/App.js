@@ -10,6 +10,7 @@ import Profile from './components/profile/Profile';
 import Footer from './components/shared/footer/Footer';
 import Navbar from './components/shared/navbar/Navbar';
 import Update from './components/updatePost/Update';
+import User from './components/user/user/User';
 
 export const articleContext = createContext();
 export const localStorageContext = createContext();
@@ -33,22 +34,9 @@ export default function App() {
                         <Route path="/profile">
                             <Profile />
                         </Route>
-                        {/* <Route exact path="/user">
+                        <Route exact path="/users">
                             <User />
                         </Route>
-                        <Route exact path="/addNewPost">
-                            <AddNewPost />
-                        </Route>
-                        <Route exact path="/updatePost">
-                            <UpdatePost />
-                        </Route>
-                        <Route path="/post/:postId">
-                            <PostDetails />
-                        </Route> */}
-
-                        {/* <Route exact path="/user">
-                            <User />
-                        </Route> */}
                         <Route path="/addPost">
                             <AddPost />
                         </Route>
