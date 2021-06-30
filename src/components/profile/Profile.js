@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 import { articleContext } from '../../App';
 
 export default function Profile() {
-    const currentUser = parseInt(localStorage.getItem('currentUser')) || 2;
+    const currentUser = 2;
 
     const localStore = JSON.parse(localStorage.getItem('user')) || [];
     const [currentArticle, setCurrentArticle] = useContext(articleContext);
